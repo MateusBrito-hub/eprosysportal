@@ -1,0 +1,803 @@
+[
+    {
+        "                                                NOME": "POSTO EXPRESSO",
+        "                                                     razao_social": "COMERCIAL DE COMB EXPRESSO LTDA",
+        "              CNPJ": "22.013.298.0001-07",
+        "                                          EMAIL": "eprosys.expresso@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "LIDER AUTO POSTO",
+        "                                                     razao_social": "LIDER COM DE COMB E LUBRIF LTDA",
+        "              CNPJ": "18.605.974.0001-64",
+        "                                          EMAIL": "eprosys.lider@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO AL",
+        "                                                     razao_social": "AL COMBUSTIVEIS LTDA",
+        "              CNPJ": "10.904.784.0001-36",
+        "                                          EMAIL": "eprosys.caipira@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO MARINHO",
+        "                                                     razao_social": "POSTO DE COMBUSTIVEL MARINHO LTDA",
+        "              CNPJ": "09.377.503.0001-55",
+        "                                          EMAIL": "eprosys.marinho@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "AUTO POSTO BRASIL",
+        "                                                     razao_social": "AUTO POSTO DE COMB GIRUS LTDA",
+        "              CNPJ": "18.292.526.0001-58",
+        "                                          EMAIL": "eprosys.brasil@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO NOBERTO OROBO",
+        "                                                     razao_social": "POSTO NOBERTO LTDA",
+        "              CNPJ": "07.343.514.0001-99",
+        "                                          EMAIL": "eprosys.nobertoorobo@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO NOBERTO CG",
+        "                                                     razao_social": "POSTO NOBERTO LTDA",
+        "              CNPJ": "05.483.878.0001-49",
+        "                                          EMAIL": "eprosys.nobertocg@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO NOBERTO LAGOA DE ROÇA",
+        "                                                     razao_social": "POSTO DE COMB NOBERTO LAGOA DE ROCA LTDA",
+        "              CNPJ": "18.709.157.0001-56",
+        "                                          EMAIL": "eprosys.nobertolr@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO EXPRESSO II",
+        "                                                     razao_social": "AGUINALDO GOMES DE SOUSA FILHO",
+        "              CNPJ": "29.159.752.0001-81",
+        "                                          EMAIL": "eprosys.expressoii@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO NOSSA SENHORA GRAÇAS",
+        "                                                     razao_social": "AUTO POSTO NOSSA SRA DAS GRACAS LTDA",
+        "              CNPJ": "17.494.630.0001-62",
+        "                                          EMAIL": "eprosys.nsgracas@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO ANEL DO BREJO",
+        "                                                     razao_social": "POSTO DE COMBUSTÍVEIS ANEL DO BREJO",
+        "              CNPJ": "08.587.065.0001-97",
+        "                                          EMAIL": "eprosys.aneldobrejo@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO SÃO JOSE NATUBA",
+        "                                                     razao_social": "JOSE BARBOSA DE SOUZA BAR - EPP",
+        "              CNPJ": "11.989.746.0002-77",
+        "                                          EMAIL": "eprosys.saojose@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO SHOPPING TIMBO AZUL",
+        "                                                     razao_social": "POSTO TIMBO AZUL COMERCIO DE COMBUSTIVEIS EIRELI",
+        "              CNPJ": "26.081.227.0001-00",
+        "                                          EMAIL": "eprosys.timboazul@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO SAO VICENTE",
+        "                                                     razao_social": "SAO VICENTE COMERCIO DE COMBUSTIVEIS LTDA",
+        "              CNPJ": "19.565.683.0001-52",
+        "                                          EMAIL": "eprosys.saovicente@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO INOVAÇÃO",
+        "                                                     razao_social": "POSTO DE COMBUSTIVEL INOVACAO LTDA",
+        "              CNPJ": "24.167.411.0001-34",
+        "                                          EMAIL": "eprosys.inovacao@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "GL POSTO DE COMBUSTIVEL",
+        "                                                     razao_social": "GL POSTO DE COMBUSTIVEL LTDA – ME",
+        "              CNPJ": "10.632.526.0001-48",
+        "                                          EMAIL": "eprosys.gl@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO AMIGÃO",
+        "                                                     razao_social": "POSTO DE COMBUSTIVEIS AMIGAO LTDA – EPP",
+        "              CNPJ": "26.133.969.0001-24",
+        "                                          EMAIL": "eprosys.amigao@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO ESTRADA",
+        "                                                     razao_social": "UMBUZEIRO COMERCIO DE COMBUSTIVEIS E LUBRIFICANTES",
+        "              CNPJ": "30.846.608.0001-00",
+        "                                          EMAIL": "eprosys.estrada@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO RIO PARAIBA",
+        "                                                     razao_social": "AUTO POSTO DE COMBUSTIVEL RIO PARAIBA",
+        "              CNPJ": "29.284.164.0001-70",
+        "                                          EMAIL": "eprosys.rioparaiba@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO NSA SENHORA DA CONCEICAO MARCACAO",
+        "                                                     razao_social": "SOARES COMERCIO DE COMBUSTIVEIS EIRELI",
+        "              CNPJ": "29.071.116.0001-01",
+        "                                          EMAIL": "eprosys.nsconceicao@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO AVL FREI DAMIAO ",
+        "                                                     razao_social": "AUTO FLEX COMERCIO DE COMBUSTIVEIS",
+        "              CNPJ": "27.522.808.0001-95",
+        "                                          EMAIL": "eprosys.freidamiao@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO BANDEIRANTES ALAGOINHA",
+        "                                                     razao_social": "POSTO BANDEIRANTES LTDA",
+        "              CNPJ": "02.803.686.0001-84",
+        "                                          EMAIL": "eprosys.bandeirantes@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTOS ALAGOAGRANDENSE",
+        "                                                     razao_social": "POSTOS DE COMBUSTIVEIS ALAGOAGRANDENSE LTDA – EPP",
+        "              CNPJ": "07.835.062.0001-62",
+        "                                          EMAIL": "eprosys.alagoagrandense@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO SHEKINAH SANTA RITA",
+        "                                                     razao_social": "SHEKINAH COM DE COMB. E LUBRIFICANTES EIRELI",
+        "              CNPJ": "20.268.837.0001-23",
+        "                                          EMAIL": "eprosys.shekinar@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "AUTO POSTO PSR",
+        "                                                     razao_social": "POSTO DE COMBUSTIVEIS NOSSA SENHORA DO CARMO LTDA",
+        "              CNPJ": "07.693.147.0001-53",
+        "                                          EMAIL": "eprosys.pina@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO NSA SENHORA DA CONCEICAO GUARABIRA",
+        "                                                     razao_social": "POSTO NOSSA SENHORA DA CONCEIÇAO LTDA",
+        "              CNPJ": "26.471.861.0001-41",
+        "                                          EMAIL": "eprosys.conceicaoguarabira@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO SAO FRANCISCO ARARUNA II",
+        "                                                     razao_social": "POSTO DE COMBUSTIVEL MARTINIANO EIRELI",
+        "              CNPJ": "22.827.003.0001-36",
+        "                                          EMAIL": "eprosys.araruna@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "RR AUTO POSTO",
+        "                                                     razao_social": "RR AUTO POSTO COMERCIO DE COMBUSTIVEIS LTDA",
+        "              CNPJ": "28.830.802.0001-48",
+        "                                          EMAIL": "eprosys.rrauto@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO B2",
+        "                                                     razao_social": "COMERCIO DE COMBUSTIV E LUBRIF B2 EIRELI",
+        "              CNPJ": "30.385.580.0001-43",
+        "                                          EMAIL": "eprosys.soares@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO GS",
+        "                                                     razao_social": "GS COMERCIO DE COMBUSTIVEIS E LUBRIFICANTES LTDA - EPP",
+        "              CNPJ": "22.389.353.0001-68",
+        "                                          EMAIL": "eprosys.gs@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "GS GAS",
+        "                                                     razao_social": "GS COMERCIO VAREJISTA DE GAS GLP LTDA",
+        "              CNPJ": "23.250.011.0001-25",
+        "                                          EMAIL": "eprosys.gsgas@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "GS CONVENIENCIA",
+        "                                                     razao_social": "GS COMERCIO DE BEBIDAS E LOJA DE CONVENIENCIA LTDA",
+        "              CNPJ": "25.451.946.0001-03",
+        "                                          EMAIL": "eprosys.gsconveniencia@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO SANTA CRUZ",
+        "                                                     razao_social": "C. P. CAVALCANTI & CIA LTDA",
+        "              CNPJ": "10.355.211.0001-09",
+        "                                          EMAIL": "eprosys.santacruz@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO CANARINHO SUMEENSE",
+        "                                                     razao_social": "OITI COMERCIAL DE COMBUSTIVEIS LTDA - EPP",
+        "              CNPJ": "24.103.533.0001-67",
+        "                                          EMAIL": "eprosys.canarinho@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO SANTA BARBARA",
+        "                                                     razao_social": "VIEIRA COMERCIAL DE COMBUSTIVEIS E LUBRIFICANTES LTDA",
+        "              CNPJ": "02.366.416.0001-53",
+        "                                          EMAIL": "eprosys.santabarbara@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO SANTA LUZIA",
+        "                                                     razao_social": "INEZITA RIBEIRO PEREIRA DE QUEIROZ",
+        "              CNPJ": "70.104.864.0001-39",
+        "                                          EMAIL": "eprosys.santaluzia@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO SAO MARCOS",
+        "                                                     razao_social": "POSTO DE COMBUSTIVEIS SAO MARCOS LTDA",
+        "              CNPJ": "01.106.085.0001-50",
+        "                                          EMAIL": "eprosys.saomarcos@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO EXPRESSO III",
+        "                                                     razao_social": "A & A COMERCIAL DE COMBUSTIVEIS LTDA",
+        "              CNPJ": "36.960.222.0001-01",
+        "                                          EMAIL": "eprosys.expressoiii@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO UNIVERSAL",
+        "                                                     razao_social": "AUTO POSTO UNIVERSAL LTDA",
+        "              CNPJ": "13.564.369.0001-79",
+        "                                          EMAIL": "eprosys.universal@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO SAO FRANCISCO GUARABIRA",
+        "                                                     razao_social": "LUZIA MARQUES DA SILVA",
+        "              CNPJ": "06.052.003.0002-36",
+        "                                          EMAIL": "eprosys.guarabira@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO SÃO FRANCISCO ARARUNA I",
+        "                                                     razao_social": "IRMAOS MARTINIANO LTDA",
+        "              CNPJ": "08.568.388.0001-33",
+        "                                          EMAIL": "eprosys.araruna@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO SÃO JOSE DOS RAMOS ",
+        "                                                     razao_social": "AUTO POSTO DE COMBUSTIVEIS SAO JOSE DOS RAMOS LTDA",
+        "              CNPJ": "33.441.929.0001-05",
+        "                                          EMAIL": "eprosys.saojosedosramos@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO SÃO SEBASTIÃO UMBUZEIRO",
+        "                                                     razao_social": "SANDRO ROZANEO CAMPOS DE FIGUEIREDO",
+        "              CNPJ": "02.846.887.0001-69",
+        "                                          EMAIL": "eprosys.saosebastiao@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO DOIS IRMAOS SOSSEGO",
+        "                                                     razao_social": "POSTO DE COMBUSTIVEIS DOIS IRMAOS LTDA - EPP",
+        "              CNPJ": "09.378.185.0001-47",
+        "                                          EMAIL": "eprosys.2irmaos1sossego@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO O NORDESTAO",
+        "                                                     razao_social": "ALBUQUERQUE CABRAL AUTO POSTO DE COMBUSTIVEL EIRELLI",
+        "              CNPJ": "28.412.296.0001-77",
+        "                                          EMAIL": "eprosys.nordestao@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "SANTOS II",
+        "                                                     razao_social": "LBS COMERCIO DE COMBUSTIVEIS LTDA",
+        "              CNPJ": "33.440.346.0001-60",
+        "                                          EMAIL": "eprosys.santosii@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO SÃO MIGUEL SERRA REDONDA",
+        "                                                     razao_social": "ABRAÃO FABIO NEVES DE ALMEIDA",
+        "              CNPJ": "10.479.898.0001-86",
+        "                                          EMAIL": "eprosys.saomiguelserraredonda@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "2025-01-26"
+    },
+    {
+        "                                                NOME": "POSTO MARILIA",
+        "                                                     razao_social": "POSTO DE COMBUSTIVEIS MARILIA LTDA ",
+        "              CNPJ": "01.631.699.0001-50",
+        "                                          EMAIL": "eprosys.marilia@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "AUTO POSTO SÃO SEBASTIAO JUAREZ",
+        "                                                     razao_social": "AUTO POSTO SÃO SEBASTIAO LTDA",
+        "              CNPJ": "35.008.070.0001-70",
+        "                                          EMAIL": "eprosys.saosebastiaojuarez@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO OLHO D' AGUA",
+        "                                                     razao_social": "ROSA MARIA LOPES DE CALDAS CIRILO",
+        "              CNPJ": "03.158.901.0001-02",
+        "                                          EMAIL": "eprosys.olhodagua@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO NS FATIMA RIO TINTO",
+        "                                                     razao_social": "SOARES COM DE COMBUST EIRELI - RIO TINTO",
+        "              CNPJ": "29.071.116.0002-84",
+        "                                          EMAIL": "eprosys.nsfatima@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO SANTIAGO",
+        "                                                     razao_social": "POSTO DE COMBUSTIVEIS SANTIAGO LTDA",
+        "              CNPJ": "70.094.628.0001-89",
+        "                                          EMAIL": "eprosys.santiago@gmail.com",
+        "BANCO ": "DROP",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO CORREIA",
+        "                                                     razao_social": "GENILSON LUIZ CIPRIANO JOAQUIM EIRELI",
+        "              CNPJ": "33.573.378.0001-33",
+        "                                          EMAIL": "eprosys.correia@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO CUBATI I",
+        "                                                     razao_social": "POSTO DE COMBUSTIVEIS CUBATI LTDA",
+        "              CNPJ": "12.408.162.0001-42",
+        "                                          EMAIL": "eprosys.doisirmaoscubati@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO SANTO EXPEDITO",
+        "                                                     razao_social": "POSTO SANTO EXPEDITO LTDA",
+        "              CNPJ": "00.683.754.0001-93",
+        "                                          EMAIL": "eprosys.santoexpedito@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO CROSS",
+        "                                                     razao_social": "RALIANE DE SOUSA CAMPOS",
+        "              CNPJ": "17.310.375.0001-50",
+        "                                          EMAIL": "eprosys.cross@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO NSA SRA BOA VIAGEM",
+        "                                                     razao_social": "ALAGOA GRANDE COMERCIO DE COMBUSTIVEIS LTDA",
+        "              CNPJ": "37.462.723.0001-12",
+        "                                          EMAIL": "eprosys.boaviagem@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO SOBRADO",
+        "                                                     razao_social": "POSTO DE COMBUSTIVEIS SOBRADO LTDA",
+        "              CNPJ": "14.849.611.0001-13",
+        "                                          EMAIL": "eprosys.sobrado@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO CRED DEDA",
+        "                                                     razao_social": "POSTO CRED DEDA  COMBUSTIVEIS LTDA",
+        "              CNPJ": "43.855.906.0001-09",
+        "                                          EMAIL": "eprosys.creddeda@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO SÃO LUCAS SABUGI",
+        "                                                     razao_social": "POSTO SÃO LUCAS COMERCIO DE COMBUSTIVEL",
+        "              CNPJ": "38.112.541.0001-84",
+        "                                          EMAIL": "eprosys.saolucassaojosesabugi@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO THE LUX",
+        "                                                     razao_social": "POSTO EMPRESARIAL THE LUX LTDA",
+        "              CNPJ": "44.471.070.0001-01",
+        "                                          EMAIL": "eprosys.mouria@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO FLORES",
+        "                                                     razao_social": "POSTO FLORES DIESEL EIRELI",
+        "              CNPJ": "70.035.860.0001-46",
+        "                                          EMAIL": "eprosys.flores@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO JE",
+        "                                                     razao_social": " AUTO POSTO JE COMBUSTIVEIS LTDA",
+        "              CNPJ": "25.476.998.0001-26",
+        "                                          EMAIL": "eprosys.je@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO NOSSA SENHORA DOS MILAGRES",
+        "                                                     razao_social": "GERMANO RODRIGUES DE MELO",
+        "              CNPJ": "03.766.700.0001-80",
+        "                                          EMAIL": "eprosys.nsmilagres@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO MASTODONTE",
+        "                                                     razao_social": "MASTODONTE COMERCIO DE COMBUSTIVEIS EIRELI",
+        "              CNPJ": "38.284.184.0001-31",
+        "                                          EMAIL": "eprosys.mastodonte@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO MACHADO",
+        "                                                     razao_social": "MARINALDO FERNANDES MACHADO - EPP",
+        "              CNPJ": "17.908.022.0001-57",
+        "                                          EMAIL": "eprosys.machado@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO PAULINO",
+        "                                                     razao_social": "COMERCIO DE COMBUSTIVEIS DO DAMIAO LTDA",
+        "              CNPJ": "05.426.376.0001-86",
+        "                                          EMAIL": "eprosys.paulino@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO JOÃO PEDRO",
+        "                                                     razao_social": "POSTO JOAO PEDRO COMERCIO DE COMBUSTIVEIS LTDA",
+        "              CNPJ": "40.358.242.0001-76",
+        "                                          EMAIL": "eprosys.joaopedro@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO SÃO JOSE CUITE",
+        "                                                     razao_social": "JOSE JOAO DOS SANTOS COMBUSTIVEIS",
+        "              CNPJ": "03.823.306.0001-36",
+        "                                          EMAIL": "eprosys.saojosecuite@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO SHEKINAH GUARABIRA",
+        "                                                     razao_social": "FERNANDES E SANTOS COMBUSTIVEIS LTDA",
+        "              CNPJ": "11.420.399.0001-86",
+        "                                          EMAIL": "eprosys.shekinahgba@gmail.com",
+        "BANCO ": "DROP",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO MIX",
+        "                                                     razao_social": "ROMILDO E RAIMUNDO COMERCIO DE COMBUSTIVEIS LTDA",
+        "              CNPJ": "37.776.741.0001-79",
+        "                                          EMAIL": "eprosys.mix@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO BOA ESPERANCA",
+        "                                                     razao_social": "AUTOPOSTO DE COMBUSTIVEIS BOA ESPERANCA LTDA",
+        "              CNPJ": "18.127.489.0001-22",
+        "                                          EMAIL": "eprosys.boaesperanca@gmail.com",
+        "BANCO ": "DROP",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO SANTOS III",
+        "                                                     razao_social": "LT COMERCIO DE COMBUSTIVEIS LTDA",
+        "              CNPJ": "44.019.679.0001-36",
+        "                                          EMAIL": "eprosys.santosiii@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO CR",
+        "                                                     razao_social": "CR DA SILVA DERIVADOS DE PETROLEO LTDA",
+        "              CNPJ": "31.941.732.0001-00",
+        "                                          EMAIL": "eprosys.cr@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO SILVA",
+        "                                                     razao_social": "AUTO POSTO SILVA LTDA",
+        "              CNPJ": "36.885.818.0001-86",
+        "                                          EMAIL": "eprosys.silva@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO LUCENA",
+        "                                                     razao_social": "LUCENA COMERCIO DE COMBUSTIVEIS EIRELI",
+        "              CNPJ": "37.236.661.0001-20",
+        "                                          EMAIL": "e-prosys.lucena@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO GS II",
+        "                                                     razao_social": "GS COMERCIO DE COMBUSTIVEIS E LUBRIFICANTES LTDA",
+        "              CNPJ": "22.389.353.0002-49",
+        "                                          EMAIL": "eprosys.gsprime@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO QUATRO FOLHAS",
+        "                                                     razao_social": "POSTO DE COMBUSTIVEIS QUATRO FOLHAS LTDA",
+        "              CNPJ": "03.013.776.0001-34",
+        "                                          EMAIL": "eprosys.4folhas@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO SALES",
+        "                                                     razao_social": "SALES & SOUZA COMERCIO DE COMBUSTIVEL E DERIVADOS DE PETROLEO LTDA",
+        "              CNPJ": "33.318.057.0001-92",
+        "                                          EMAIL": "eprosys.sales@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO ALGODAO",
+        "                                                     razao_social": "ALGODAO COMERCIO DE COMBUSTIVEIS LTDA",
+        "              CNPJ": "26.705.019.0001-27",
+        "                                          EMAIL": "eprosys.algodao@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO MARANHAO",
+        "                                                     razao_social": "MARANHAO COMBUSTIVEIS LTDA",
+        "              CNPJ": "42.406.500.0002-59",
+        "                                          EMAIL": "eprosys.nsfatimacd@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO CUBATI II",
+        "                                                     razao_social": "CUBATI COMERCIO DE COMBUSTIVEIS E LUBRIFICANTES LTDA",
+        "              CNPJ": "34.776.874.0001-57",
+        "                                          EMAIL": "eprosys.cubati2@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "GS CONVENIENCIA PRIME",
+        "                                                     razao_social": "GS COM DE BEBIDAS E LOJA DE CONV LTDA",
+        "              CNPJ": "25.451.946.0002-86",
+        "                                          EMAIL": "eprosys.gsprimeconveniencia@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO SANTANA",
+        "                                                     razao_social": "CARLOS UMBERTO P DE SANTANA COMB LTDA",
+        "              CNPJ": "42.564.731.0001-00",
+        "                                          EMAIL": "eprosys.santana@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO SG",
+        "                                                     razao_social": "GOMES E COSTA COMERCIO DE COMBUSTIVEL LTDA",
+        "              CNPJ": "43.546.156.0001-85",
+        "                                          EMAIL": "eprosys.sg@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO VENEZA",
+        "                                                     razao_social": "AUTO POSTO VENEZA COMERCIO DE COMBUSTIVEIS LTDA",
+        "              CNPJ": "36.655.182.0001-86",
+        "                                          EMAIL": "eprosys.veneza@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO SÃO FRANCISCO",
+        "                                                     razao_social": "MARQUES & LEITE COMERCIAL DE COMBUSTIVEL LTDA",
+        "              CNPJ": "42.260.609.0001-40",
+        "                                          EMAIL": "eprosys.saofranciscomulungu@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "POSTO SANTA ROSA",
+        "                                                     razao_social": "SANTA ROSA COM DE COMBUSTIVEIS LTDA",
+        "              CNPJ": "47.636.935.0001-22",
+        "                                          EMAIL": "eprosys.santarosa@gmail.com",
+        "BANCO ": "MEGA",
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    },
+    {
+        "                                                NOME": "Marinhos",
+        "                                                     razao_social": "Marinhos Itapororoca",
+        "              CNPJ": "05.832.199.0001-38",
+        "                                          EMAIL": "eprosys.marinhoitapororoca@gmail.com",
+        "BANCO ": NaN,
+        "RESPONSAVEL ": NaN,
+        "Unnamed: 6": "NaT"
+    }
+]

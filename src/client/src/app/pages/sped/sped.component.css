@@ -1,0 +1,12 @@
+div{
+  display: flex;
+  flex-direction: row;
+}
+
+app-company-list {
+  width: 70%;
+}
+
+app-campany-info{
+  width: 30%;
+}

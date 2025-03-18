@@ -1,0 +1,24 @@
+<div class="companylist">
+  <div class="companyNav">
+    <div class="search">
+      <input type="text" placeholder="Nome da empresa" [(ngModel)]="searchTerm" (input)="onSearch()" />
+      <button (click)="onSearch()">Pesquisar</button>
+    </div>
+  </div>
+  <div class="companies">
+    <div class="table-header">
+      <div style="width: 50%; border-radius: 10px 0 0 0;">Empresa</div>
+      <div style="width: 20%;">Tipo Banco</div>
+      <div style="width: 20%;">Status</div>
+      <div style="width: 10% ; border-radius: 0 10px 0 0;">Ações</div>
+    </div>
+    <div class="table-body" *ngFor="let company of filteredCompanies" style="list-style: none;">
+      <div class="table-content" (click)="selectedId(company.id)">
+        <div style="width: 50%;">{{company.nome}}</div>
+        <div style="width: 20%;">{{company.tipo_banco}}</div>
+        <div style="width: 20%;">{{company.status}}</div>
+        <div style="width: 10%; padding: 0;"><button>Action</button></div>
+      </div>
+    </div>
+  </div>
+</div>

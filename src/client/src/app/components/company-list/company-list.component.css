@@ -1,0 +1,91 @@
+.companylist {
+  background-color: white;
+  width: 95%;
+  min-height: 80vh;
+  max-height: 90vh;
+  margin: auto;
+  border-radius: 10px;
+  position: sticky;
+  top: 95px;
+  padding: 5px;
+}
+
+.companyNav {
+  padding: 12px 0 0 12px;
+}
+
+.companyNav input {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 25px;
+  padding-left: 10px;
+  margin: 0 10px 10px 0;
+}
+
+.companyNav button {
+  padding: 5px;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: #508ECF;
+  color: #ffffff;
+}
+
+.companyNav button:hover{
+  background-color: rgba(80, 142, 207, .75);
+  cursor: pointer;
+}
+
+.companies{
+  width: 95%;
+  min-height: 75vh;
+  max-height: 75vh;
+  margin: auto;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.table-header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: aliceblue;
+}
+
+.table-header div {
+  border: 1px solid black;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  background-color: #508ECF;
+  color: white;
+}
+
+.table-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.table-content div {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: .5px solid black;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.table-content button {
+  font-size: 15px;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  background-color: #508ECF;
+  color: #ffffff;
+}
+
+.table-content button:hover {
+  background-color: rgba(80, 142, 207, .75);
+  cursor: pointer;
+}

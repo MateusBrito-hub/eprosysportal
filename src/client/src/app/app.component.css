@@ -1,0 +1,9 @@
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+router-outlet {
+  position: sticky;
+  top: 95px;
+}
