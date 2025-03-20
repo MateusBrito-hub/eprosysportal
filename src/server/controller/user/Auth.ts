@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import { validation } from '../../shared/middlewares';
 import { StatusCodes } from 'http-status-codes';
 import * as yup from 'yup';
-import { Auth } from '../../database/providers/user/Auth'; 
+import { UserProvider } from '../../database/providers'; 
 import { generateToken } from '../../shared/services/genereterJWT'
 
 interface IBodyProps {
@@ -12,14 +12,14 @@ interface IBodyProps {
 
 export const loginValidation = validation((getSchema) => ({
 	body: getSchema<IBodyProps>(yup.object().shape({
-		email: yup.string().email().required('O e-mail é obrigatório'),
-		password: yup.string().min(6).required('A senha é obrigatória')
+		email: yup.string().email().required(),
+		password: yup.string().required()
 	}))
 }));
 
 export const login = async (req: Request<{}, {}, IBodyProps>, res: Response): Promise<void> => {
 	try {
-		const result = await Auth(req.body.email, req.body.password);
+		const result = await UserProvider.Auth(req.body.email, req.body.password);
 
 		if (result instanceof Error) {
 			res.status(StatusCodes.UNAUTHORIZED).json({

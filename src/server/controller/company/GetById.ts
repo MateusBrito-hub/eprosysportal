@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import * as yup from 'yup';
 import { validation } from '../../shared/middlewares';
 import { StatusCodes } from 'http-status-codes';
-import { CompanyProvider } from '../../database/providers/company';
+import { CompanyProvider } from '../../database/providers';
 
 interface IParamsProps {
     id?: number,

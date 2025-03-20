@@ -1,6 +1,7 @@
 import { ETableNames } from '../../ETableNames';
 import { Knex } from '../../knex';
 import { IUser } from '../../models';
+import bcrypt from 'bcrypt';
 
 export const Auth = async (email: string, password: string): Promise<IUser | Error> => {
 	try {
@@ -10,7 +11,7 @@ export const Auth = async (email: string, password: string): Promise<IUser | Err
 			.first();
 
 		if (result) {
-			const isPasswordValid = password;
+			const isPasswordValid = await bcrypt.compare(password, result.password);
 
 			if (isPasswordValid) {
 				return result;
@@ -20,8 +21,8 @@ export const Auth = async (email: string, password: string): Promise<IUser | Err
 		}
 
 		return new Error('Usuário não encontrado');
-	} catch (error) {
-		console.log(error);
+	} catch (err) {
+		console.log(err);
 		return new Error('Erro ao consultar o registro');
 	}
 };

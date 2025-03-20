@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { AuthService } from '../../services/auth.service'
+import { AuthService } from '../../services/user.service'
 
 @Component({
   selector: 'app-login',
@@ -17,7 +17,7 @@ export class LoginComponent {
   auth(): void {
     this.authService.login(this.user)
       .then(response => {
-        console.log(response);
+        return response
       })
       .catch(err => console.error("Erro no login", err));
   }

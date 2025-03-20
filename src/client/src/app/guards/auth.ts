@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from '@angular/router';
-import { AuthService } from '../services/auth.service'; // Certifique-se de que o AuthService está importado
+import { AuthService } from '../services/user.service'; // Certifique-se de que o AuthService está importado
 
 @Injectable({
   providedIn: 'root'

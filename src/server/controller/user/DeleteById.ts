@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import * as yup from 'yup';
 import { validation } from '../../shared/middlewares';
 import { StatusCodes } from 'http-status-codes';
-import { CompanyProvider } from '../../database/providers';
+import { UserProvider } from '../../database/providers';
 
 interface IParamsProps {
     id?: number
@@ -21,7 +21,7 @@ export const deteleById = async (req: Request<IParamsProps>, res: Response) : Pr
         }
     });
 
-    const result = await CompanyProvider.deleteById(Number(req.params.id));
+    const result = await UserProvider.deleteById(Number(req.params.id));
     
     if (result instanceof Error){
         res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
