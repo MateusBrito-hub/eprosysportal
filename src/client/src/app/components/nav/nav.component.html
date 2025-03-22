@@ -4,7 +4,7 @@
   </div>
   <div class="links" style="width: 50%;">
     <ul>
-      <li>Home</li>
+      <li [routerLink]="['home']" [routerLinkActive]="['activated']" [routerLinkActiveOptions]="{exact: true}">Home</li>
       <li [routerLink]="['SPED']" [routerLinkActive]="['activated']" [routerLinkActiveOptions]="{exact: true}">SPEDs</li>
       <li>Backups</li>
     </ul>

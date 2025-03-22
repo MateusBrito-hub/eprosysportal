@@ -20,7 +20,7 @@ export class AuthService {
       const response = await axios.post<{ token: string }>(`${this.apiUrl}/login`, credentials);
       localStorage.setItem(this.tokenKey, response.data.token);
 
-      this.router.navigate(['/SPED']);
+      this.router.navigate(['/home']);
       return true;
     } catch (err) {
       console.error(err);
