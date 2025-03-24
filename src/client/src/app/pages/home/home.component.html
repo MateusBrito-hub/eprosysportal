@@ -1,1 +1,32 @@
-<p>home works!</p>
+<div style="display: flex; flex-direction: row;">
+  <app-profile style="width: 30%;"></app-profile>
+  <div style="width: 100%;">
+    <div class="demand-list" style="display: flex; flex-direction: row; height: 70%; border: 1px solid red;">
+      <div class="personal-demand" style="width: 75%; border: 1px solid blue;">
+        <div class="companies">
+          <div class="table">
+            <h3>Demandas Pessoais</h3>
+            <div class="table-header">
+              <div style="width: 40%; border-radius: 10px 0 0 0;">Empresa</div>
+              <div style="width: 20%;">Tipo Banco</div>
+              <div style="width: 20%;">Arquivos</div>
+              <div style="width: 20% ; border-radius: 0 10px 0 0;">Observações</div>
+            </div>
+          </div>
+          <div class="table-body" *ngFor="let company of companies" style="list-style: none;">
+            <div class="table-content">
+              <div style="width: 40%;">{{company.name}}</div>
+              <div style="width: 20%;">{{company.typeBD}}</div>
+              <div style="width: 20%;">{{company.docs}}</div>
+              <div style="width: 20%;">{{company.obs}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="demands" style="width: 25%; border: 1px solid blue;">
+
+      </div>
+    </div>
+    <div class="informations" style="height: 30%; border: 1px solid red; ;"></div>
+  </div>
+</div>

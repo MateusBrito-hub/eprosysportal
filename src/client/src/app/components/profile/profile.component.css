@@ -1,0 +1,80 @@
+.profile-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  max-width: 100%;
+  background-color: #f8f9fa;
+  border-radius: 30px;
+  margin: 0 10px;
+}
+
+.profile-image {
+  align-self: center;
+  width: 150px;
+  height: 150px;
+  border: 1.75px solid #000;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-info h1 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.profile-info h3 {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+
+.profile-info textarea {
+  resize: none;
+  background-color: whitesmoke;
+  padding: 10px 5%;
+  width: 90%;
+  height: 150px;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.profile-info textarea:focus {
+  outline: none;
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.action-button {
+  padding: 5px 10px;
+  width: 50px;
+  border-radius: 10px;
+  background-color: #508ECF;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  background-color: rgba(80, 142, 207, .75);
+  color: #fff;
+}
