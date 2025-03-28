@@ -1,0 +1,15 @@
+<div class="demands" style="width: 100%; background-color: white;">
+  <div class="companies">
+    <div class="table">
+      <h3>Empresas Liberadas</h3>
+      <div class="table-header">
+        <div style="border-radius: 10px 10px 0 0;">Empresa</div>
+      </div>
+    </div>
+    <div class="table-body" *ngFor="let company of companies" style="list-style: none;">
+      <div class="table-content">
+        <div >{{company.name}}</div>
+      </div>
+    </div>
+  </div>
+</div>
