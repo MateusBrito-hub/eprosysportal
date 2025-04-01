@@ -1,0 +1,34 @@
+import { Request, Response } from 'express';
+import * as yup from 'yup';
+import { validation } from '../../shared/middlewares';
+import { StatusCodes } from 'http-status-codes';
+import { SpedProvider } from '../../database/providers';
+
+interface IParamsProps {
+    company_id?: number,
+}
+
+export const getByCompanyIdValidation = validation((getSchema) => ({
+    params: getSchema<IParamsProps>(yup.object().shape({
+        company_id: yup.number().integer().required().moreThan(0)
+    }))
+}));
+
+export const getByCompanyId = async (req: Request<IParamsProps>, res: Response) : Promise<void> => {
+    if(!req.params.company_id) res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
+        errors: {
+            default: 'O parâmetro "id" precisa ser informado'
+        }
+    });
+
+    const result = await SpedProvider.getByCompanyId(Number(req.params.company_id));
+    
+    if (result instanceof Error){
+        res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
+            errors:{
+                default: result.message
+            }
+        });
+    }
+    res.status(StatusCodes.OK).json(result);
+};
