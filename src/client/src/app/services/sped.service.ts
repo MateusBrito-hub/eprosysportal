@@ -16,7 +16,7 @@ export class SpedService {
     return axios.post<ISped>(this.apiUrl, sped).then(res => res.data);
   }
 
-  async getAllCompanies(): Promise<ISped[]> {
+  async getAllSped(): Promise<ISped[]> {
     return axios.get<ISped[]>(this.apiUrl).then((res) => res.data);
   }
 
@@ -28,9 +28,9 @@ export class SpedService {
     return axios.get<ISped>(`${this.apiUrl}/${id}`).then(res => res.data);
   }
 
-  async getSpedByCompanyId(company_id: number): Promise<ISped> {
+  async getSpedByCompanyId(id: number): Promise<ISped> {
 
-    return axios.get<ISped>(`${this.apiUrl}/${company_id}`).then(res => res.data);
+    return axios.get<ISped>(`${this.apiUrl}/status/${id}`).then(res => res.data);
   }
 
   async updateSped(id: number, sped: ISped): Promise<ISped> {

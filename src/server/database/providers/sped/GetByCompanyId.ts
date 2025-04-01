@@ -2,12 +2,12 @@ import { ETableNames } from '../../ETableNames';
 import { Knex } from '../../knex';
 import { ISped } from '../../models';
 
-export const getByCompanyId = async (company_id: number) : Promise<ISped | Error> => {
+export const getByCompanyId = async (id: number) : Promise<ISped | Error> => {
 
 	try {
 		const result = await Knex(ETableNames.sped)
 			.select('*')
-			.where('empresa_id', '=', company_id)
+			.where('empresa_id', '=', id)
 			.first();
 		if (result) return result;
         

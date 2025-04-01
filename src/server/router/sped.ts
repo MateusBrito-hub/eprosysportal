@@ -12,7 +12,7 @@ router.post('/',
 router.get('/:id',
 	SpedController.getByIdValidation,
 	SpedController.getById);
-router.get('/:comany_id',
+router.get('/status/:id',
 	SpedController.getByCompanyIdValidation,
 	SpedController.getByCompanyId);
 router.delete('/:id',
