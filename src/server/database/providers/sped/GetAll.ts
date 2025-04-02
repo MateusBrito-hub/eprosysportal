@@ -8,7 +8,7 @@ export const getAll = async (page: number, limit: number, filter: string, id = 0
 		const result = await Knex(ETableNames.sped)
 			.select('*')
 			.where('id', Number(id))
-			.orWhere('status', 'like', `%${filter}%`)
+			.orWhere('empresa_id', 'like', `%${filter}%`)
 			.offset((page - 1) * limit)
 			.limit(limit);
 		if (id > 0 && result.every(item => item.id !== id)) {

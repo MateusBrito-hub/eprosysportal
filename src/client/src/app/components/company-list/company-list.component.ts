@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms'
 import { GetIdSelectedCompanyService } from '../../services/getidselectedcompany.service'
 import { CompanyService } from '../../services/company.service'
 import { SpedService } from '../../services/sped.service'
+import { ISped } from '../../models';
+import { last } from 'rxjs';
 
 @Component({
   selector: 'app-company-list',
@@ -16,10 +18,10 @@ export class CompanyListComponent {
   companies: any[] = []
   filteredCompanies: any[] = [];
   searchTerm: string = '';
-  companyStatus:  { [key: number]: string } = {};
+  companyStatus: { [key: number]: string } = {};
   lastStatus: { [key: number]: string } = {};
 
-  constructor(private idService: GetIdSelectedCompanyService, private CompanyService: CompanyService, private SpedService: SpedService) {}
+  constructor(private idService: GetIdSelectedCompanyService, private CompanyService: CompanyService, private SpedService: SpedService) { }
 
   async ngOnInit(): Promise<void> {
     this.companies = await this.CompanyService.getAllCompanies()
@@ -29,13 +31,21 @@ export class CompanyListComponent {
   }
 
   async loadStatuses(companies: any[]): Promise<void> {
+
     for (let company of companies) {
-      const sped = await this.SpedService.getSpedByCompanyId(company.id);
-      this.companyStatus[company.id] = sped.status;
+      // Pega o último SPED da empresa
+      const lastSped = await this.SpedService.getLastSpedByCompanyId(company.id);
+      console.log(company, lastSped)
+      if (lastSped) {
+        this.companyStatus[company.id] = lastSped.status;  // Define o status como o do último SPED
+      } else {
+        this.companyStatus[company.id] = 'Nenhum SPED encontrado';  // Caso não haja SPED
+      }
     }
+
   }
 
-  selectedId(companyid: number) :void {
+  selectedId(companyid: number): void {
     this.idService.sendId(companyid)
   }
 
@@ -49,24 +59,70 @@ export class CompanyListComponent {
     }
   }
 
-  async changeStatus(company_id: number) {
-    const companyId = company_id;
-
+  async changeStatus(companyId: number): Promise<void> {
     this.lastStatus[companyId] = this.companyStatus[companyId];
-    console.log()
 
-    if (this.companyStatus[companyId] === 'Liberar') {
-      this.companyStatus[companyId] = 'Gerado';
-    } else if (this.companyStatus[companyId] === 'Gerado') {
-      this.companyStatus[companyId] = 'Enviado';
-    } else {
-      this.companyStatus[companyId] = 'Liberar';
+    // Pega o último SPED da empresa carregado em loadStatuses
+    const lastSped = await this.SpedService.getLastSpedByCompanyId(companyId);
+    if (!lastSped) {
+      console.log('Nenhum SPED encontrado para essa empresa');
+      return;
     }
 
-    // Atualiza o status no banco de dados
-    //await this.SpedService.updateSped(companyId, this.companyStatus[companyId]);
+    let newStatus = '';
+    const mesAnterior = new Intl.DateTimeFormat('pt-BR', { month: 'long' }).format(
+      new Date(new Date().setMonth(new Date().getMonth() - 1))
+    );
 
-    console.log(`Empresa ID: ${companyId}, Novo Status: ${this.companyStatus[companyId]}`);
+    // Define o próximo status com base no status atual
+    if (this.companyStatus[companyId] === 'Liberar') {
+      newStatus = 'Gerado';
+    } else if (this.companyStatus[companyId] === 'Gerado') {
+      newStatus = 'Enviado';
+    } else if (this.companyStatus[companyId] === 'Enviado') {
+      const newSped = {
+        status: 'Liberar',
+        liberacao: new Date().toISOString(),
+        envio: 'null',
+        mes_referente: mesAnterior,
+        arquivos: lastSped.arquivos,
+        empresa_id: lastSped.empresa_id,
+        suporte_id: lastSped.suporte_id,
+      };
+
+      try {
+        await this.SpedService.createSped(newSped);
+      } catch (error) {
+        console.log(error);
+        this.companyStatus[companyId] = this.lastStatus[companyId]; // Reverte status em caso de erro
+      }
+      return;
+    }
+
+    if (newStatus !== 'Liberar') {
+      lastSped.liberacao = new Date().toISOString();
+    }
+
+    if (newStatus === 'Enviado') {
+      lastSped.envio = new Date().toISOString();
+    }
+
+    try {
+      await this.SpedService.updateSped(companyId, {
+        status: newStatus,
+        liberacao: lastSped.liberacao,
+        envio: lastSped.envio,
+        mes_referente: lastSped.mes_referente,
+        arquivos: lastSped.arquivos,
+        empresa_id: lastSped.empresa_id,
+        suporte_id: lastSped.suporte_id
+      });
+      this.companyStatus[companyId] = newStatus;
+    } catch (error) {
+      console.error(`Erro ao atualizar status da empresa ${companyId}:`, error);
+      this.companyStatus[companyId] = this.lastStatus[companyId]; 
+    }
   }
+
 
 }

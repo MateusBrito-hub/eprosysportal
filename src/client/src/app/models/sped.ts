@@ -1,5 +1,5 @@
 export interface ISped {
-	id: number
+	id?: number
 	status: string
 	liberacao: string
 	envio: string

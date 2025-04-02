@@ -21,7 +21,7 @@ export const getByCompanyId = async (req: Request<IParamsProps>, res: Response):
 				default: 'O parâmetro "id" precisa ser informado'
 			}
 		});
-		return
+		return 
 	}
 
 	const result = await SpedProvider.getByCompanyId(Number(req.params.id));

@@ -33,6 +33,18 @@ export class SpedService {
     return axios.get<ISped>(`${this.apiUrl}/status/${id}`).then(res => res.data);
   }
 
+  async getLastSpedByCompanyId(companyId: number): Promise<ISped | null> {
+    try {
+      const response = await axios.get<ISped[]>(`${this.apiUrl}/?filter=${companyId}`);
+      const speds = response.data;
+      console.log(speds)
+      return speds && speds.length ? speds[speds.length - 1] : null;
+    } catch (error) {
+      console.error('Erro ao buscar SPEDs:', error);
+      return null;
+    }
+  }
+
   async updateSped(id: number, sped: ISped): Promise<ISped> {
     return axios.put<ISped>(`${this.apiUrl}/${id}`, sped).then(res => res.data);
   }

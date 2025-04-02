@@ -7,10 +7,10 @@ export async function up(knex: Knex) {
 		.schema
 		.createTable(ETableNames.sped, table => {
 			table.bigIncrements('id').primary().index();
-			table.string('status').notNullable().index().unique()
-			table.string('liberacao').notNullable().index().unique()
-			table.string('envio').notNullable().unique()
-			table.string('mes_referente').notNullable()
+			table.string('status').notNullable().index()
+			table.string('liberacao').notNullable().index()
+			table.string('envio').notNullable()
+			table.string('mes_referente').notNullable().unique()
 			table.string('arquivos').notNullable()
 			table.bigInteger('empresa_id').notNullable().references('id').inTable(ETableNames.company).onUpdate('CASCADE').onDelete('RESTRICT');
 			table.bigInteger('suporte_id').notNullable().references('id').inTable(ETableNames.user).onUpdate('CASCADE').onDelete('RESTRICT');

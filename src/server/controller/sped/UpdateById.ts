@@ -40,6 +40,7 @@ export const updateById = async (req: Request<IParamsProps, {}, IBodyProps>, res
 				default: result.message
 			}
 		});
+		return;
 	}
 
 	res.status(StatusCodes.NO_CONTENT).send();

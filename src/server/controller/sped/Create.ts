@@ -29,6 +29,7 @@ export const create = async (req: Request<{}, {}, IBodyProps>, res: Response) : 
 				default: result.message
 			}
 		});
+		return
 	}
 
 	res.status(StatusCodes.CREATED).json(result);
