@@ -37,7 +37,6 @@ export class SpedService {
     try {
       const response = await axios.get<ISped[]>(`${this.apiUrl}/?filter=${companyId}`);
       const speds = response.data;
-      console.log(speds)
       return speds && speds.length ? speds[speds.length - 1] : null;
     } catch (error) {
       console.error('Erro ao buscar SPEDs:', error);

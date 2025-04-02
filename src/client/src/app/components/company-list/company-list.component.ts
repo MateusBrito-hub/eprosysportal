@@ -4,8 +4,6 @@ import { FormsModule } from '@angular/forms'
 import { GetIdSelectedCompanyService } from '../../services/getidselectedcompany.service'
 import { CompanyService } from '../../services/company.service'
 import { SpedService } from '../../services/sped.service'
-import { ISped } from '../../models';
-import { last } from 'rxjs';
 
 @Component({
   selector: 'app-company-list',
@@ -31,18 +29,15 @@ export class CompanyListComponent {
   }
 
   async loadStatuses(companies: any[]): Promise<void> {
+    const mesAtual = new Intl.DateTimeFormat('pt-BR', { month: 'long' }).format(new Date());
 
-    for (let company of companies) {
-      // Pega o último SPED da empresa
+    console.log(mesAtual)
+    for (const company of companies) {
       const lastSped = await this.SpedService.getLastSpedByCompanyId(company.id);
-      console.log(company, lastSped)
-      if (lastSped) {
-        this.companyStatus[company.id] = lastSped.status;  // Define o status como o do último SPED
-      } else {
-        this.companyStatus[company.id] = 'Nenhum SPED encontrado';  // Caso não haja SPED
-      }
+      this.companyStatus[company.id] = lastSped
+        ? (lastSped.mes_referente === mesAtual ? 'Enviado' : lastSped.status)
+        : 'Nenhum SPED encontrado';
     }
-
   }
 
   selectedId(companyid: number): void {
@@ -62,67 +57,87 @@ export class CompanyListComponent {
   async changeStatus(companyId: number): Promise<void> {
     this.lastStatus[companyId] = this.companyStatus[companyId];
 
-    // Pega o último SPED da empresa carregado em loadStatuses
+    // Obtém o último SPED da empresa
     const lastSped = await this.SpedService.getLastSpedByCompanyId(companyId);
+
     if (!lastSped) {
-      console.log('Nenhum SPED encontrado para essa empresa');
+      console.warn('Nenhum SPED encontrado para essa empresa');
       return;
     }
 
-    let newStatus = '';
+    console.log('Ultimo SPED:', lastSped);
+
+    const mesAtual = new Intl.DateTimeFormat('pt-BR', { month: 'long' }).format(new Date());
     const mesAnterior = new Intl.DateTimeFormat('pt-BR', { month: 'long' }).format(
       new Date(new Date().setMonth(new Date().getMonth() - 1))
     );
 
-    // Define o próximo status com base no status atual
-    if (this.companyStatus[companyId] === 'Liberar') {
-      newStatus = 'Gerado';
-    } else if (this.companyStatus[companyId] === 'Gerado') {
-      newStatus = 'Enviado';
-    } else if (this.companyStatus[companyId] === 'Enviado') {
-      const newSped = {
-        status: 'Liberar',
-        liberacao: new Date().toISOString(),
-        envio: 'null',
-        mes_referente: mesAnterior,
-        arquivos: lastSped.arquivos,
-        empresa_id: lastSped.empresa_id,
-        suporte_id: lastSped.suporte_id,
-      };
+    // Se o último SPED já for do mês atual e estiver no status "Enviado", não faz nada
+    if (lastSped.mes_referente === mesAtual && lastSped.status === 'Enviado') {
+      alert('SPED já enviado para o mês atual!');
+      return
+    } else {
+      let newStatus = '';
 
-      try {
-        await this.SpedService.createSped(newSped);
-      } catch (error) {
-        console.log(error);
-        this.companyStatus[companyId] = this.lastStatus[companyId]; // Reverte status em caso de erro
+      // Definir o próximo status com base no status atual
+      switch (this.companyStatus[companyId]) {
+        case 'Liberar':
+        case 'liberar':
+          newStatus = 'Gerado';
+          break;
+        case 'Gerado':
+          newStatus = 'Enviado';
+          break;
+        case 'Enviado':
+          if (lastSped.mes_referente !== mesAtual) {
+            const newSped = {
+              status: 'Liberar',
+              liberacao: new Date().toISOString(),
+              envio: 'null',
+              mes_referente: mesAtual,
+              arquivos: lastSped.arquivos,
+              empresa_id: lastSped.empresa_id,
+              suporte_id: lastSped.suporte_id,
+            };
+
+            try {
+              await this.SpedService.createSped(newSped);
+              this.companyStatus[companyId] = 'Liberar';
+            } catch (error) {
+              console.error('Erro ao criar novo SPED:', error);
+              this.companyStatus[companyId] = this.lastStatus[companyId];
+            }
+            return;
+          }
+          break;
       }
-      return;
-    }
+      // Atualizar SPED se houver mudança de status
+      if (newStatus) {
+        if (newStatus !== 'Liberar') {
+          lastSped.liberacao = new Date().toISOString();
+        }
 
-    if (newStatus !== 'Liberar') {
-      lastSped.liberacao = new Date().toISOString();
-    }
+        if (newStatus === 'Enviado') {
+          lastSped.envio = new Date().toISOString();
+        }
 
-    if (newStatus === 'Enviado') {
-      lastSped.envio = new Date().toISOString();
-    }
+        try {
+          await this.SpedService.updateSped(Number(lastSped.id), {
+            status: newStatus,
+            liberacao: lastSped.liberacao,
+            envio: lastSped.envio,
+            mes_referente: lastSped.mes_referente,
+            arquivos: lastSped.arquivos,
+            empresa_id: lastSped.empresa_id,
+            suporte_id: lastSped.suporte_id,
+          });
 
-    try {
-      await this.SpedService.updateSped(companyId, {
-        status: newStatus,
-        liberacao: lastSped.liberacao,
-        envio: lastSped.envio,
-        mes_referente: lastSped.mes_referente,
-        arquivos: lastSped.arquivos,
-        empresa_id: lastSped.empresa_id,
-        suporte_id: lastSped.suporte_id
-      });
-      this.companyStatus[companyId] = newStatus;
-    } catch (error) {
-      console.error(`Erro ao atualizar status da empresa ${companyId}:`, error);
-      this.companyStatus[companyId] = this.lastStatus[companyId]; 
+          this.companyStatus[companyId] = newStatus;
+        } catch (error) {
+          console.error(`Erro ao atualizar status da empresa ${companyId}: `, error);
+          this.companyStatus[companyId] = this.lastStatus[companyId]; // Reverte status em caso de erro
+        }
+      }
     }
   }
-
-
 }
