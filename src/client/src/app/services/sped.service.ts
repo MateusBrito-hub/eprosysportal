@@ -33,6 +33,11 @@ export class SpedService {
     return axios.get<ISped>(`${this.apiUrl}/status/${id}`).then(res => res.data);
   }
 
+  async getSpedByUserId(id: number): Promise<ISped[]> {
+
+    return axios.get<ISped[]>(`${this.apiUrl}/user/${id}`).then(res => res.data);
+  }
+
   async getLastSpedByCompanyId(companyId: number): Promise<ISped | null> {
     try {
       const response = await axios.get<ISped[]>(`${this.apiUrl}/?filter=${companyId}`);

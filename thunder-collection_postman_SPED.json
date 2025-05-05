@@ -1,0 +1,113 @@
+{
+    "info": {
+        "_postman_id": "b3ecb35d-cd12-4af2-8040-c789cc3ee5e2",
+        "name": "SPED",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "Criar Demanda",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "192.168.3.5:8080/sped",
+                    "path": [
+                        "sped"
+                    ],
+                    "host": [
+                        "192",
+                        "168",
+                        "3",
+                        "5"
+                    ],
+                    "port": "8080"
+                },
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "bearer $2b$10$F5.357XnQAXXBvIEcUz4ge6OB2hlgqz4NFJype7Ywc5752rL3adki",
+                        "disabled": true
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"status\": \"aguardando liberação\",\n  \"liberacao\": \"agora\",\n  \"envio\": \"agora\",\n  \"mes_referente\":\"esse\",\n  \"arquivos\": \"todos\",\n  \"empresa_id\": 1,\n  \"suporte_id\": 2\n}"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTc0MzU1Mzk5OCwiZXhwIjoxNzQzNTU3NTk4fQ.YmRm557mh_-dcZJcYjuVGF72Z8WENyyY7WMwCUhSKHY",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Criar Empresa",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "192.168.3.5:8080/user/login",
+                    "path": [
+                        "user",
+                        "login"
+                    ],
+                    "host": [
+                        "192",
+                        "168",
+                        "3",
+                        "5"
+                    ],
+                    "port": "8080"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"email\": \"brito@teste.com\",\n  \"password\": \"12nubivfvuvk\"\n}"
+                }
+            }
+        },
+        {
+            "name": "Criar Usuario",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "192.168.3.5:8080/user/login",
+                    "path": [
+                        "user",
+                        "login"
+                    ],
+                    "host": [
+                        "192",
+                        "168",
+                        "3",
+                        "5"
+                    ],
+                    "port": "8080"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"email\": \"brito@teste.com\",\n  \"password\": \"12nubivfvuvk\"\n}"
+                }
+            }
+        }
+    ]
+}

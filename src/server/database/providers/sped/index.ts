@@ -5,6 +5,7 @@ import * as getById from './GetById';
 import * as getByCompanyId from './GetByCompanyId';
 import * as UpdateById from './UpdateById';
 import * as deleteById from './DeleteById';
+import * as getByUserId from './GetByUserId';
 
 export const SpedProvider = {
 	...count,
@@ -13,5 +14,6 @@ export const SpedProvider = {
 	...getById,
 	...getByCompanyId,
 	...UpdateById,
-	...deleteById
+	...deleteById,
+	...getByUserId
 };

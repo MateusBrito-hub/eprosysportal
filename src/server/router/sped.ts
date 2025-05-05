@@ -15,6 +15,9 @@ router.get('/:id',
 router.get('/status/:id',
 	SpedController.getByCompanyIdValidation,
 	SpedController.getByCompanyId);
+router.get('/user/:id',
+	SpedController.getByUserIdValidation,
+	SpedController.getByUserId);
 router.delete('/:id',
 	SpedController.deleteByIdValidation,
 	SpedController.deteleById);

@@ -3,6 +3,11 @@ import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { Router } from '@angular/router';
 import { environment } from '../../environments/enviroments';
+import { jwtDecode } from 'jwt-decode';
+
+interface DecodedToken {
+  id: number;
+}
 
 @Injectable({
   providedIn: 'root'
@@ -42,6 +47,19 @@ export class AuthService {
 
   getToken(): string | null {
     return localStorage.getItem(this.tokenKey);
+  }
+
+  getLoggedUser(): DecodedToken | null {
+    const token = this.getToken();
+    if (token) {
+      try {
+        return jwtDecode<DecodedToken>(token);
+      } catch (err) {
+        console.error('Erro ao decodificar token', err);
+        return null;
+      }
+    }
+    return null;
   }
 
   private setupInterceptors(): void {
